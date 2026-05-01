@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Assignment Uploader</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="register-page">
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>📚 Assignment Hub</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="register-container">
+        <div class="register-box">
+            <h2>Create Account</h2>
+            <p class="register-subtitle">Join Assignment Hub Today</p>
+
+            <form id="registerForm" class="register-form">
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="firstName">First Name</label>
+                        <input 
+                            type="text" 
+                            id="firstName" 
+                            name="firstName" 
+                            placeholder="First name"
+                            required
+                        >
+                        <span class="error-message" id="firstNameError"></span>
+                    </div>
+
+                    <div class="form-group half">
+                        <label for="lastName">Last Name</label>
+                        <input 
+                            type="text" 
+                            id="lastName" 
+                            name="lastName" 
+                            placeholder="Last name"
+                            required
+                        >
+                        <span class="error-message" id="lastNameError"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Enter your email"
+                        required
+                    >
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="rollNumber">Roll Number / ID</label>
+                    <input 
+                        type="text" 
+                        id="rollNumber" 
+                        name="rollNumber" 
+                        placeholder="Your roll/ID number"
+                        required
+                    >
+                    <span class="error-message" id="rollError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Create a strong password"
+                        required
+                    >
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input 
+                        type="password" 
+                        id="confirmPassword" 
+                        name="confirmPassword" 
+                        placeholder="Confirm your password"
+                        required
+                    >
+                    <span class="error-message" id="confirmError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Register As</label>
+                    <select id="role" name="role" required>
+                        <option value="">Select Role</option>
+                        <option value="student">Student</option>
+                        <option value="faculty">Faculty</option>
+                    </select>
+                    <span class="error-message" id="roleError"></span>
+                </div>
+
+                <div class="form-group checkbox">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to the <a href="#">Terms and Conditions</a>
+                    </label>
+                    <span class="error-message" id="termsError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+                <span class="error-message" id="formError"></span>
+            </form>
+
+            <p class="login-link">
+                Already have an account? <a href="login.html">Sign In</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

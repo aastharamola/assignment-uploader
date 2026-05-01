@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Assignment Uploader</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="dashboard-page">
+    <nav class="navbar navbar-dashboard">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>📚 Assignment Hub</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link">Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <span id="userEmail">User</span> ▼
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Profile</a>
+                        <a href="#" class="dropdown-item">Settings</a>
+                        <hr>
+                        <a href="#" class="dropdown-item" id="logoutBtn">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#" data-section="overview" class="menu-item active">📊 Overview</a></li>
+                    <li><a href="#" data-section="assignments" class="menu-item">📝 Assignments</a></li>
+                    <li><a href="#" data-section="submissions" class="menu-item">📤 Submissions</a></li>
+                    <li><a href="#" data-section="grades" class="menu-item">⭐ Grades</a></li>
+                    <li><a href="#" data-section="upload" class="menu-item">➕ New Upload</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section id="overview" class="content-section active">
+                <h2>Dashboard Overview</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📚</div>
+                        <div class="stat-content">
+                            <h4>Total Assignments</h4>
+                            <p class="stat-number" id="totalAssignments">0</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✅</div>
+                        <div class="stat-content">
+                            <h4>Submitted</h4>
+                            <p class="stat-number" id="submitted">0</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⏳</div>
+                        <div class="stat-content">
+                            <h4>Pending</h4>
+                            <p class="stat-number" id="pending">0</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-content">
+                            <h4>Average Grade</h4>
+                            <p class="stat-number" id="avgGrade">--</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="assignments" class="content-section">
+                <h2>Assignments</h2>
+                <div id="assignmentsList" class="assignments-list"></div>
+            </section>
+
+            <section id="submissions" class="content-section">
+                <h2>My Submissions</h2>
+                <div id="submissionsList" class="submissions-list">
+                </div>
+            </section>
+
+            <section id="grades" class="content-section">
+                <h2>Grades</h2>
+                <div id="gradesList" class="grades-list">
+                </div>
+            </section>
+
+            <section id="upload" class="content-section">
+                <h2>Upload Assignment</h2>
+                <div id="uploadArea" class="upload-area">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

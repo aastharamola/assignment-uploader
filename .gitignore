@@ -1,0 +1,32 @@
+# ===========================
+# Sensitive Configuration
+# ===========================
+backend/config/mail.php
+
+# ===========================
+# PHP / Composer
+# ===========================
+backend/vendor/
+composer.phar
+
+# ===========================
+# Uploaded Files (user data)
+# ===========================
+backend/uploads/
+uploads/
+
+# ===========================
+# OS / IDE Files
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ===========================
+# Logs & Temp
+# ===========================
+*.log
+*.tmp
+*.swp

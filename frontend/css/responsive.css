@@ -1,0 +1,276 @@
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 15px;
+    }
+
+    .navbar .container {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-link {
+        padding: 0.4rem 0.5rem;
+    }
+
+    .nav-link.btn-primary {
+        padding: 0.4rem 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 1rem !important;
+        border-radius: 0;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .features {
+        padding: 60px 20px;
+    }
+
+    .features h2 {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .about {
+        padding: 60px 20px;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .features-list {
+        grid-template-columns: 1fr;
+    }
+
+    .login-box,
+    .register-box {
+        padding: 2rem 1.5rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -250px;
+        top: 70px;
+        width: 250px;
+        height: calc(100vh - 70px);
+        background-color: white;
+        z-index: 999;
+        transition: all 0.3s ease;
+        border-right: 1px solid var(--border-color);
+        overflow-y: auto;
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .main-content {
+        padding: 1.5rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .stat-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .upload-dropzone {
+        padding: 2rem 1.5rem;
+    }
+
+    .upload-dropzone h3 {
+        font-size: 1.2rem;
+    }
+
+    .upload-icon {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.3rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .btn {
+        padding: 0.6rem 1.25rem;
+        font-size: 0.9rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+
+    .login-container,
+    .register-container {
+        padding: 1rem;
+    }
+
+    .login-box,
+    .register-box {
+        padding: 1.5rem 1rem;
+        max-width: 100%;
+    }
+
+    .login-box h2,
+    .register-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 0.65rem;
+        font-size: 16px; 
+    }
+
+    .remember-forgot {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .main-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .assignment-card,
+    .submission-card,
+    .grade-card {
+        padding: 1rem;
+    }
+
+    .assignment-card h3,
+    .submission-card h3 {
+        font-size: 1rem;
+    }
+
+    .upload-dropzone {
+        padding: 1.5rem;
+    }
+
+    .upload-icon {
+        font-size: 2rem;
+    }
+
+    .dropdown-menu {
+        right: -1.5rem;
+        min-width: 180px;
+    }
+
+    .file-requirements {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .badge {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.6rem;
+    }
+}

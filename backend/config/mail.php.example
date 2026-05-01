@@ -1,0 +1,13 @@
+<?php
+
+// Copy this file to mail.php and fill in your own values.
+
+define('MAIL_FROM',       'your-email@gmail.com');
+define('MAIL_FROM_NAME',  'Assignment Hub');
+define('MAIL_PASSWORD',   'your-gmail-app-password');  // Generate at: myaccount.google.com/apppasswords
+
+define('MAIL_HOST',       'smtp.gmail.com');
+define('MAIL_PORT',       587);
+define('MAIL_ENCRYPTION', 'tls');
+
+define('APP_URL', 'http://localhost:8000/assignment-uploader/frontend');
