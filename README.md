@@ -2,6 +2,10 @@
 
 A comprehensive web-based platform for seamless assignment submission, management, and evaluation. Built with modern technologies following effective web design principles.
 
+## 🎬 Demo Video
+
+https://github.com/user-attachments/assets/24fe02d8-2797-48ab-9915-d59f6509893f
+
 ## 📋 Project Overview
 
 **Assignment Hub** is a full-stack assignment management system that provides:
