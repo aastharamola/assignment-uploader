@@ -110,7 +110,3 @@ define('DB_NAME', 'assignment_uploader');
 You can create test accounts with:
 - **Student Account**: Email as student identifier, role as "Student"
 - **Faculty Account**: Email as faculty identifier, role as "Faculty"
-
----
-
-**Built with ❤️ using HTML5, CSS3, JavaScript, jQuery, PHP, React.js, and MySQL**
